@@ -1,0 +1,397 @@
+*{
+	padding: 0px;
+	margin: 0auto;
+	border-radius: 10px;
+	box-sizing: border-box;
+	color: white;
+}
+body{
+	background-color: black;
+	background-repeat: no-repeat;
+}
+header{
+	width:100%;
+	height: 100px;
+	margin-top: 5px;
+	position: fixed;
+	background-color: rgba(7, 4, 3, 0.3);
+	z-index: 10;
+
+}
+
+nav ul{
+	display: flex;
+	color: black;
+	list-style: none;
+	text-decoration: none;
+	width: 100%;
+	line-height: 50px;
+	justify-content: space-evenly;
+
+}
+a:hover{
+	color: blue;
+	cursor: pointer;
+	font-size: 30px;
+}
+nav a{
+	text-decoration: none;
+	color: white;
+	font-family: bell mt;
+	font-size: 25px;
+
+}
+section ul{
+	list-style: none;
+}
+
+#inicio{
+	width: 100%;
+	background-image: url(../img/pai.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#inicio .container{
+	width: 100%;
+	background-color: rgba(7, 12, 20, 0.7);
+	height: 100vh;
+	color: white;
+}
+.container{
+
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container_inicio{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.titulo{
+
+}
+.titulo h1{
+	text-align: center;
+	font-size: 2.2em;
+}
+.titulo{
+	animation: entrada-texto 5s ease-in-out 2;
+}
+@keyframes entrada-texto{
+	from{
+		transform: translateY(200px);
+	}
+	to{
+		transform: translateY(10px);
+	}
+}
+.imagen{
+
+	float: right;
+	padding: 40px;
+	filter: drop-shadow(5px 5px 20px skyblue);
+
+	animation: all 5s ease-in-out 5 backwards;
+}
+@keyframes all{
+	0%{
+		/*transform: rotate(45deg);*/
+		transform: scale(1.0);
+		/*transform: translateY(100px);*/
+	}
+	50%{
+		/*transform: rotate(180deg);*/
+		transform: scale(1.4);
+		/*transform: translateY(10px);*/
+	}
+	100%{
+		/*transform: rotate(180deg);*/
+		transform: scale(1.0);
+		/*transform: translateY(5px);*/
+	}
+}
+
+
+#acerca_de{
+	width: 100%;
+	background-image: url(../img/fondon.avif);
+	height: 100vh;
+	background-size: cover;
+}
+#acerca_de .container{
+	background-color: rgba(7, 12, 20, 0.7);
+	height: auto;
+	color: white;
+}
+.cajas{
+	height: auto;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+.caja{
+	width: 400px;
+	height: 470px;
+	background-color: rgba(0, 100, 120, 0.5);
+	text-align: center;
+	box-shadow: 0px 0px 20px skyblue;
+	float: left;
+}
+.imge{
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+.imge img{
+	width: 60%;
+	object-fit: cover;
+	margin-top: 5px;
+}
+.caja button{
+	width: 60%;
+	padding: 10px;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	background-color: rgba(7, 12, 20, 0.5);
+}
+.caja button:hover{
+	cursor: pointer;
+	background-color: black;
+}
+.imga img{
+	width: 150px;
+	height: 150px;
+}
+.cajas2{
+	width: 100%;
+	height: auto;
+	display: flex;
+	background-color: rgba(2, 6, 12, 0.7);
+	justify-content: space-evenly;
+}
+.caja1{
+	width: 400px;
+	height: 500px;
+	text-align: center;
+	float: left;
+	border: solid 2px white;
+}
+.orden{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.caja1 button{
+	width: 100px;
+	height: 30px;
+	background-color: skyblue;
+	float: right;
+	margin-right: 10px;
+}
+.p{
+	width: 98%;
+}
+.p p{
+	text-align: center;
+}
+#servicios{
+	background-image: url(../img/servio.png);
+	height: 100vh;
+	background-size: cover;
+}
+#servicios .container{
+	height: auto;
+	background-color: rgba(7, 12, 20, 0.7);
+	
+	color: white;
+}
+#contacto{
+	background-image: url(../img/contacto.jpg);
+	height: 100vh;
+	background-size: cover;
+}
+#contacto .container{
+	background-color: rgba(2, 4, 5, 0.4);
+	height: 100vh;
+	color: white;
+}
+.container_contact{
+	text-align: center;
+	width: 600px;
+	height: 600px;
+	border-radius:55px;
+	box-shadow: 5px 5px 30px black;
+	backdrop-filter: blur(2px);
+	display: flex;
+	flex-direction: column;
+	gap: 1.2em;
+}
+form{
+	width: 80%;
+	margin: 10px auto;
+}
+form input{
+	width: 80%;
+	background-color: rgba(7, 12, 20, 0.5);
+	color: white;
+	padding: 5px 2px;
+	font-size: 1.2em;
+}
+form textarea{
+	color: white;
+	font-size: 1.2em;
+	background-color: rgba(7, 12, 20, 0.5);
+	resize: none;
+}
+form input[type="submit"]{
+	width: 100%;
+	background-color: #6786;
+	color: white;
+	padding: 5px 0;
+}
+form input[type="submit"]:hover{
+	cursor: pointer;
+	background-color: #6779;
+}
+html{
+	scroll-behavior: smooth;
+}
+.container_footer{
+	
+	overflow: hidden;
+}
+.container_footer p:hover{
+	cursor: pointer;
+	color: red;
+}
+.container_footer p span:hover{
+	cursor: pointer;
+	color: red;
+}
+.container_footer i:hover{
+	cursor: pointer;
+	color: red;
+}
+.info{
+	margin: auto;
+	width: 80%;
+	height: 250px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.direccion{	
+	display: flex;
+	flex-direction: column;
+}
+.direccion p i{
+	padding:5px;
+}
+.redes{
+	margin: auto;
+	width: 20%;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+
+}
+.pie{
+	width: 100%;
+	height: 80px;
+	
+	display: flex;
+	justify-content: space-between;
+}
+.ubicacion iframe{
+	width: 250px;
+	height: 160px;
+}
+@media (max-width: 400px){
+	nav a{
+		display: flex;
+		flex-direction: column;
+		font-size: 20px;
+	}
+	nav ul{
+		display: flex;
+		width: 100%;
+		
+		float: left;
+	}
+	header{
+		display: flex;
+		flex-direction: column;
+	}
+	.titulo h1{
+		font-size: 25px;
+	}
+	.cajas{
+		width: 200px;
+		display: flex;
+		flex-direction: column;
+	}
+	.caja{
+		font-size: 10px;
+		height: 240px;
+		margin-top: 5px;
+		width: 180px;
+	}
+	.caja button{
+		width: 100px;
+		font-size: 10px;
+	}
+	.imge{
+		justify-content: center;
+	display: flex;
+	align-items: center;
+		width: 100px;
+	}
+	#aceerca_de{
+		height: auto;
+	}
+	#acerca_de .container{
+		height: auto;
+	}
+	.cajas2{
+		float: left;
+		width: 200px;
+		display: flex;
+		flex-direction: column;
+	}
+	.caja1{
+		float: left;
+
+		height: 150px;
+		margin-top: 10px;
+		width: 300px;
+	}
+	#servicios{
+		height: auto;
+	}
+	#servicios .container{
+		height: auto;
+	}
+	form{
+		width: 50%;
+	}
+	form textarea{
+		width: 80%;
+	}
+	.container_footer p{
+		font-size: 15px;
+	}
+	.ubicacion iframe{
+		width: 150px;
+	}
+	.caja1{
+		float: left;
+		margin-right: -100px;
+		width: 300px;
+		height: 450px;
+	}
+}
